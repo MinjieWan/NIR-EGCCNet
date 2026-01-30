@@ -1,4 +1,4 @@
-# NIR-EGCC: Two-Stage NIR-to-RGB Image Restoration
+# NIR-EGCC: A Color Constancy Method Guided by Near-Infrared Edge Information
 
 This is the official implementation of **NIR-EGCCNet**, a color constancy framework designed to restore RGB images by leveraging Near-Infrared (NIR) edge guidance.
 
@@ -105,4 +105,5 @@ python test.py --ckpt_path checkpoints/pretrained/my_stage_2.h5
 ```
 
 ## License
+
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
