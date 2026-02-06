@@ -8,9 +8,9 @@ Single-image super-resolution (SISR) methods rely on learning image priors in or
 The project directory is organized as follows :
 
 ```text
-NIR_EGCC_CODE/
-├─  checkpoints/              # Saved weights 
-├─  dataset/                  # Dataset folder
+DSTC-SRNet/
+├── checkpoints/              # Saved weights 
+├── dataset/                  # Dataset folder
 ├── model/                    # Model architecture
 ├── support/                  # Downsample for SBSR
 ├── results/                  # Inference results 
