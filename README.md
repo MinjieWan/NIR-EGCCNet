@@ -9,8 +9,8 @@ The project directory is organized as follows :
 
 ```text
 NIR_EGCC_CODE/
-├─ checkpoints/               # Saved weights 
-├─ dataset/                   # Saved weights 
+├─  checkpoints/              # Saved weights 
+├─  dataset/                  # Dataset folder
 ├── model/                    # Model architecture
 ├── support/                  # Downsample for SBSR
 ├── results/                  # Inference results 
@@ -19,7 +19,7 @@ NIR_EGCC_CODE/
 ├── dataset.py                # Data loading logic
 ├── loss.py                   # Loss functions
 ├── utils.py                  # Helper functions
-├── train.py                  # training script
+├── train.py                  # Training script
 └── test.py                   # Evaluation script
 ```
 
