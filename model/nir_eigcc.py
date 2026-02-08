@@ -146,8 +146,8 @@ class SobelEdgeLayer(layers.Layer):
         return edge_map
 
 
-# ==================NIR_EGCC core===================
-class NIR_EGCC(Model):
+# ==================NIR_EIGCC core===================
+class NIR_EIGCC(Model):
     def __init__(self, n_feats=64, n_blocks=8, res_scale=0.1):
         super().__init__()
 
@@ -226,5 +226,6 @@ class NIR_EGCC(Model):
         x = self.sfa(F_fused, d3)
 
         x = self.acc(x)
+
 
         return self.out_conv(x)
