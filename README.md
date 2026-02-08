@@ -1,6 +1,6 @@
-# NIR-EGCC: A Color Constancy Method Guided by Near-Infrared Edge Information
+# NIR-EIGCCNet: A Near-Infrared Edge Information-Guided Color Constancy Method
 
-This is the official implementation of **NIR-EGCCNet**, a color constancy framework designed to restore RGB images by leveraging Near-Infrared edge guidance.
+This is the official implementation of **NIR-EIGCCNet**, a color constancy framework designed to restore RGB images by leveraging Near-Infrared edge guidance.
 
 ---
 
@@ -9,7 +9,7 @@ This is the official implementation of **NIR-EGCCNet**, a color constancy framew
 The project directory is organized as follows :
 
 ```text
-NIR_EGCC_CODE/
+NIR_EIGCC_CODE/
 ├─ checkpoints/               # Saved weights (.h5)
 ├─ data/
 │   ├── train/                # Training .h5 files
@@ -17,7 +17,7 @@ NIR_EGCC_CODE/
 │   ├── train_list.txt        # Mapping for training pairs
 │   └── test_list.txt         # Mapping for testing pairs
 ├── model/
-│   └── nir_egcc.py           # Model architecture
+│   └── nir_eigcc.py           # Model architecture
 ├── results/                  # Inference results 
 ├── dataset_manager.py        # Data loading logic
 ├── losses.py                 # Loss functions
@@ -105,5 +105,6 @@ python test.py --ckpt_path checkpoints/pretrained/my_stage_2.h5
 ```
 
 ## License
+
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
