@@ -6,7 +6,7 @@ import argparse
 from skimage.metrics import peak_signal_noise_ratio as compare_psnr
 from skimage.color import rgb2lab, deltaE_ciede2000
 
-from model.nir_egcc import NIR_EGCC as MY_MODEL
+from model.nir_eigcc import NIR_EIGCC as MY_MODEL
 from dataset_manager import DataLoader
 from utils import (
     _safe_ssim,
@@ -148,4 +148,5 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         print("\nTest interrupted by user.")
     except Exception as e:
+
         print(f"\nError: {e}")
