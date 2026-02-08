@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import argparse
 
-from model.nir_egcc import NIR_EGCC as MY_MODEL
+from model.nir_eigcc import NIR_EIGCC as MY_MODEL
 from dataset_manager import DataLoader
 from utils import image_normalization, save_visual_results
 from losses import FineTuneLoss
@@ -113,4 +113,5 @@ if __name__ == "__main__":
     try:
         train_finetune(args)
     except Exception as e:
+
         print(f"\nError: {e}")
